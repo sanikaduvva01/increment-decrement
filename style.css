@@ -1,0 +1,66 @@
+body{
+    background-color: #000;
+}
+
+.card{
+    background-color: #fff;
+    width: 150px;
+    border-radius: 15px;
+   /* height:300px;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
+    padding: 3px;
+}
+.img{
+    height: 100px;
+    display: block;
+    margin: 5px auto;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.prod-title{
+    font-size: 15px;
+    text-align: center;
+}
+
+.description{
+    font-size: 10px;
+    padding: 0 5px;
+}
+.price{
+    font-size: 15px;
+    text-align: center;
+
+    
+}
+
+.btn{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: block;
+    margin: 5px auto;
+}
+
+.btn-quantity{
+    height: 15px;
+}
+
+.quantity-container{
+   
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.qua-text{
+    font-size: 20px;
+    margin: auto 5px;
+    
+}
+.qua{
+    font-size: 10px;
+}

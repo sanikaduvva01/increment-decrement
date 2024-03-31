@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment/decrement</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="headphone.png" class="img">
+    <div>
+        <h1 class="prod-title">boat headphones</h1>
+        <p class="description">
+            boAt Newly Launched Nirvana Eutopia Bluetooth Headphones with Head Tracking Function.
+        </p>
+        <p class="price">₹ 999/-</p>
+
+       
+
+        <div class="quantity-container">
+            <img src="minus.png" class="btn-quantity" onclick="dec()"/>
+
+            <span class="qua-text" id="quantity-txt">1</span>
+
+            <img src="plus.png" class="btn-quantity" onclick="inc()"/>
+        </div>
+        <button type="button" class="btn">buy now</button>
+    </div>
+    </div>
+
+    <script>
+        function inc(){
+            const quantityText = document.getElementById('quantity-txt');
+            let quantity =  parseInt( quantityText.innerText);
+
+            if(quantity<10){
+                quantityText.innerText = ++quantity;
+            }
+            else
+            {
+                alert("you can't add more than 10 items");
+            }
+
+           
+       
+    }
+        function dec(){
+            const quantityText = document.getElementById('quantity-txt');
+            let quantity =  parseInt( quantityText.innerText);
+
+            if(quantity>1){
+                quantityText.innerText = --quantity;
+            }
+            else
+            {
+                alert("you can't add less than 1 items");
+            }
+           
+        }
+    </script>
+</body>
+</html>
